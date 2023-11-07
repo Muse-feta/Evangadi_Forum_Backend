@@ -1,11 +1,20 @@
 const mysql2 = require("mysql2");
 require("dotenv").config();
 
+// const dbConnection = mysql2.createPool({
+//   user: "evangadi_forum",
+//   password: "evangadi_forum",
+//   database: "evangadiforum_db",
+//   host: "localhost",
+//   connectionLimit: 10,
+// });
+
 const dbConnection = mysql2.createPool({
-  user: "evangadi_forum",
-  password: "evangadi_forum",
-  database: "evangadiforum_db",
-  host: "localhost",
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE,
+  host: process.env.HOST,
+  port: process.env.PORT,
   connectionLimit: 10,
 });
 
