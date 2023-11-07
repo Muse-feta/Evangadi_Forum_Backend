@@ -10,11 +10,11 @@ require("dotenv").config();
 // });
 
 const dbConnection = mysql2.createPool({
-  user: process.env.USER,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE,
-  host: process.env.HOST,
-  port: process.env.PORT,
+  user: "evangadi_forum_m",
+  password: "@kergat#0093",
+  database: "evangadi_forum_m",
+  host: "85.10.205.173",
+  port: 3306,
   connectionLimit: 10,
 });
 
